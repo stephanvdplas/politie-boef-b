@@ -1,6 +1,6 @@
 radio.onReceivedNumber(function (receivedNumber) {
     if (receivedNumber < 25) {
-        politie.set(LedSpriteProperty.X, receivedNumber / 5)
+        politie.set(LedSpriteProperty.Y, receivedNumber / 5)
         politie.set(LedSpriteProperty.X, receivedNumber % 5)
     } else if (receivedNumber == 30) {
         basic.showString("Jij wint!")
